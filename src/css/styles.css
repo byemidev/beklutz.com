@@ -154,6 +154,7 @@ section{
 
 .scroll-down{
   position: absolute;
+  z-index: 10003;
   bottom: 6%;
   right: 9%;
 }
@@ -173,18 +174,28 @@ transform: translateY(-8px);
 
 footer{
   display: none;
-  position: initial;
+  position: fixed;
   right: 0;
   bottom: 0;
   z-index: 10002;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
   padding: 33px 9%;
   background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+footer.open{
+  display: flex;
+}
+
+footer > ul{
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+
+}
 
 .footer-navlist{
-  display: none;
+  display: flex;
 }
 
 .footer-navlist a{
@@ -200,11 +211,6 @@ footer{
  font-size: 18px;
  color: black;
 }
-
-.footer-navlist.open{
-  right: 0;
-}
-
 
 @media (max-width: 1535px){
   header{

@@ -13,7 +13,7 @@ const sr = ScrollReveal ({
   reset: true
 });
 //apply scroll for .klutzyboy-text
-sr.reveal('.klutzyboy-text',{delay:200, origin:'top'});
+sr.reveal('.klutzyboy-text',{delay:210, origin:'top'});
 
 //footer js hidden show 
 let menuFooter = document.querySelector('#footer-icon');
@@ -21,9 +21,9 @@ let footer = document.querySelector('footer');
 let fnav = document.querySelector('.footer-navlist');
 
 menuFooter.onclick = () =>{
-//menuFooter.classList.toggle('bx-x');
-footer.style.display="block";
-fnav.style.display="flex";
+footer.classList.toggle('open');
 }
 
 //.klutzyboy-img js code to scroll origin right
+
+//sr2.reveal('.klutzyboy-img',{delay:700,origin:'top'});
