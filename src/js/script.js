@@ -18,7 +18,6 @@ sr.reveal('.klutzyboy-text',{delay:210, origin:'top'});
 //footer js hidden show 
 let menuFooter = document.querySelector('#footer-icon');
 let footer = document.querySelector('footer');
-let fnav = document.querySelector('.footer-navlist');
 
 menuFooter.onclick = () =>{
 footer.classList.toggle('open');

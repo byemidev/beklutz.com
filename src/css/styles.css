@@ -261,6 +261,7 @@ footer > ul{
   }
 
   .klutzyboy-img{
+    width: 70%;
     text-align: center;
   }
 
@@ -295,6 +296,18 @@ footer > ul{
     display: block;
   }
 
+  #footer-icon{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+  }
+  
+  .footer-navlist{
+    flex-direction: column;
+    align-items: center;
+  }
   .navlist{
     position: absolute;
     top: 100%;
