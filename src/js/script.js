@@ -28,3 +28,17 @@ sr.reveal(fnav,{delay:0, origin:'left'});
 //.klutzyboy-img js code to scroll origin right
 
 //sr2.reveal('.klutzyboy-img',{delay:700,origin:'top'});
+
+let languageSelector = document.querySelector('#language-selector');
+
+
+languageSelector.addEventListener("change",function(){
+  var selectedLanguage = languageSelector.value;
+  if(selectedLanguage=='es'){
+    //usar AJAX para cargar el contenido en espanol 
+  }else if(selectedLanguage=='fr'){
+    //usar AJAX para cargar el contenido en Frances
+  }else if(selectedLanguage=='en'){
+    //cargar contenido por defecto en ingles
+  }
+});
