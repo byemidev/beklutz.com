@@ -171,6 +171,33 @@ section{
 transform: translateY(-8px);
 }
 
+footer{
+  display: none;
+  position: initial;
+  background: orange;
+  right: 0;
+  bottom: 0;
+  z-index: 10002;
+}
+
+.footer-navlist{
+  display: none;
+}
+
+.footer-navlist a{
+  color:whitesmoke;
+  margin: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.footer-navlist.open{
+  right: 20;
+}
+
+
 @media (max-width: 1535px){
   header{
      padding: 15px 3%;
@@ -239,7 +266,13 @@ transform: translateY(-8px);
   }
 
   .scroll-down{
-    display: none;
+    display: flex;
+    position: initial;
+  }
+
+  .scroll-down i{
+    padding: 6px;
+    font-size: 7px;
   }
 }
 
@@ -279,3 +312,4 @@ transform: translateY(-8px);
     height: auto;
   }
 }
+
