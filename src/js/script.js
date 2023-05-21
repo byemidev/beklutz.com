@@ -21,16 +21,18 @@ let footer = document.querySelector('footer');
 let fnav = document.querySelector('.footer-navlist');
 
 menuFooter.onclick = () =>{
-footer.classList.toggle('open');
-sr.reveal(fnav,{delay:0, origin:'left'});
-}
+  footer.classList.toggle('open');
+  sr.reveal(fnav,{delay:0, origin:'left'});
+}//hay que arregla la version movil , no se ve el scroll
 
 //.klutzyboy-img js code to scroll origin right
 
 //sr2.reveal('.klutzyboy-img',{delay:700,origin:'top'});
 
 let languageSelector = document.querySelector('#language-selector');
-
+languageSelector.classList = () =>{
+languageSelector.style
+};
 
 languageSelector.addEventListener("change",function(){
   var selectedLanguage = languageSelector.value;
