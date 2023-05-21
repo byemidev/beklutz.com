@@ -181,8 +181,7 @@ footer{
   align-items: center;
   justify-content: space-between;
   padding: 33px 9%;
-  background: linear-gradient(to right, #a8ff78, #78ffd6);;
-}
+  background: linear-gradient(to right, #f2994a, #f2c94c);
 
 .footer-navlist{
   display: none;
@@ -203,7 +202,7 @@ footer{
 }
 
 .footer-navlist.open{
-  right: 20;
+  right: 0;
 }
 
 

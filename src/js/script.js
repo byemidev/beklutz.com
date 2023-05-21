@@ -16,13 +16,14 @@ const sr = ScrollReveal ({
 sr.reveal('.klutzyboy-text',{delay:200, origin:'top'});
 
 //footer js hidden show 
-let scrollDown = document.querySelector('.scroll-down');
+let menuFooter = document.querySelector('#footer-icon');
 let footer = document.querySelector('footer');
 let fnav = document.querySelector('.footer-navlist');
 
-scrollDown.onclick = () =>{
-footer.style.display = "block";
-fnav.style.display = "flex";
+menuFooter.onclick = () =>{
+//menuFooter.classList.toggle('bx-x');
+footer.style.display="block";
+fnav.style.display="flex";
 }
 
 //.klutzyboy-img js code to scroll origin right
