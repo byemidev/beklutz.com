@@ -11,7 +11,7 @@ header{
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 10004;
   width: 100%;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ section{
 }
 
 .klutzyboy-img img{
-  width: 700px;
+  width: 300px;
   height: auto;
 }
 
@@ -236,7 +236,7 @@ footer > ul{
 
 @media (max-width: 1340px){
   .klutzyboy-img img{
-    width: 100%;
+    width: 200px;
     height: auto;
   }
 
@@ -260,13 +260,8 @@ footer > ul{
     padding-top: 115px;
   }
 
-  .klutzyboy-img{
-    width: 70%;
-    text-align: center;
-  }
-
   .klutzyboy-img img{
-    width: 560px;
+    width: 200px;
     height: auto;
   }
 
@@ -314,7 +309,8 @@ footer > ul{
     right: -100%;
     width: 300px;
     height: 40vh;
-    background: orange;
+    background: rgb(red, green, blue,0.5);
+    backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -331,12 +327,34 @@ footer > ul{
   .navlist.open{
     right: 0;
   }
+
+  .klutzyboy-img img{
+    width: 200px;
+    height: auto;
+    margin-left: 60px;
+  }
 }
 
 @media (max-width: 680px){
+
+  .icons{
+    display: flex;
+    position:absolute;
+    top: 15%;
+    
+  }
+   .klutzyboy-img{
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .klutzyboy-img img{
-    width: 100%;
-    height: auto;
+    width: 180px;
+  }
+  footer{
+    display: flex;
+    position: initial;
   }
 }
 
