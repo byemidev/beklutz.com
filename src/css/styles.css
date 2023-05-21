@@ -174,10 +174,14 @@ transform: translateY(-8px);
 footer{
   display: none;
   position: initial;
-  background: orange;
   right: 0;
   bottom: 0;
   z-index: 10002;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: linear-gradient(to right, #a8ff78, #78ffd6);;
 }
 
 .footer-navlist{
@@ -191,6 +195,11 @@ footer{
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: all .55s ease;
+}
+
+.footer-navlist a:hover{
+ font-size: 18px;
+ color: black;
 }
 
 .footer-navlist.open{
