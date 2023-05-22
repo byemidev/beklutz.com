@@ -5,6 +5,7 @@ menu.onclick = () =>{
   menu.classList.toggle('bx-x');
   navlist.classList.toggle('open');
 };
+
 //scroll instance
 const sr = ScrollReveal ({
   distance: '65px',
@@ -14,7 +15,8 @@ const sr = ScrollReveal ({
 });
 //apply scroll for .klutzyboy-text
 sr.reveal('.klutzyboy-text',{delay:200, origin:'top'});
-
+//.klutzyboy-img js code to scroll origin right
+sr.reveal('.klutzyboy-img',{delay:800,distance:'350px',origin:'right'});
 //footer js hidden show 
 let menuFooter = document.querySelector('#footer-icon');
 let footer = document.querySelector('footer');
@@ -23,12 +25,17 @@ let fnav = document.querySelector('.footer-navlist');
 menuFooter.onclick = () =>{
   footer.classList.toggle('open');
   sr.reveal(fnav,{delay:0, origin:'left'});
-}//hay que arregla la version movil , no se ve el scroll
+};
+/**
+ * hay que arregla la version movil , no se ve el scroll
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
 
-//.klutzyboy-img js code to scroll origin right
-
-//sr2.reveal('.klutzyboy-img',{delay:700,origin:'top'});
-
+//selection language from traductions 
 let languageSelector = document.querySelector('#language-selector');
 languageSelector.classList = () =>{
 languageSelector.style
