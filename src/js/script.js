@@ -24,10 +24,7 @@ let fnav = document.querySelector('.footer-navlist');
 menuFooter.onclick = () =>{
   footer.classList.toggle('open');
   sr.reveal(fnav,{delay:0, origin:'left'});
-}//hay que arregla la version movil , no se ve el scroll
-
-//.klutzyboy-img js code to scroll origin right
-
+}
 
 let languageSelector = document.querySelector('#language-selector');
 
