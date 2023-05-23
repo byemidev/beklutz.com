@@ -261,12 +261,6 @@ footer > ul{
     padding-top: 115px;
   }
 
-  .klutzyboy-img{
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .klutzyboy-img img{
     width: 200px;
     height: auto;
@@ -312,11 +306,13 @@ footer > ul{
   }
   .navlist{
     position: absolute;
-    top: 10%;
+    top: 35%;
     right: -100%;
     width: 32%;
-    height: 40vh;
+    height: 25vh;
     border-radius: 5px;
+    background: rgb(red, green, blue,0.5);
+    backdrop-filter: blur(5px);
     background: #e6e6e6;
     display: flex;
     align-items: center;
@@ -326,7 +322,6 @@ footer > ul{
   }
 
   .navlist a{
-    top: 12%;
     margin-left: 0;
     display: block;
     margin: 7px 0;
