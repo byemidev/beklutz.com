@@ -37,9 +37,7 @@ menuFooter.onclick = () =>{
 
 //selection language from traductions 
 let languageSelector = document.querySelector('#language-selector');
-languageSelector.classList = () =>{
-languageSelector.style
-};
+
 
 languageSelector.addEventListener("change",function(){
   var selectedLanguage = languageSelector.value;
