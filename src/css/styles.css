@@ -11,7 +11,7 @@ header{
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 10004;
   width: 100%;
   display: flex;
   align-items: center;
@@ -35,7 +35,8 @@ section{
 
 .navlist a{
   color:black;
-  margin-left: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
   font-size: 15px;
   font-weight: 600;
   border-bottom: 2px solid transparent;
@@ -97,7 +98,7 @@ section{
 }
 
 .klutzyboy-img img{
-  width: 700px;
+  width: 300px;
   height: auto;
 }
 
@@ -154,6 +155,7 @@ section{
 
 .scroll-down{
   position: absolute;
+  z-index: 10003;
   bottom: 6%;
   right: 9%;
 }
@@ -169,6 +171,47 @@ section{
 
 .scroll-down i:hover{
 transform: translateY(-8px);
+}
+
+footer{
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10002;
+  width: 100%;
+  padding: 33px 9%;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+  justify-content: space-around;
+}
+
+footer.open{
+  display: flex;
+}
+
+footer > ul{
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.footer-navlist{
+  display: flex;
+  margin: 0 20px 0 20; 
+}
+
+.footer-navlist a{
+  color:whitesmoke;
+  margin: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.footer-navlist a:hover{
+ font-size: 18px;
+ color: black;
 }
 
 @media (max-width: 1535px){
@@ -195,7 +238,7 @@ transform: translateY(-8px);
 
 @media (max-width: 1340px){
   .klutzyboy-img img{
-    width: 100%;
+    width: 200px;
     height: auto;
   }
 
@@ -220,11 +263,13 @@ transform: translateY(-8px);
   }
 
   .klutzyboy-img{
-    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .klutzyboy-img img{
-    width: 560px;
+    width: 200px;
     height: auto;
   }
 
@@ -239,7 +284,13 @@ transform: translateY(-8px);
   }
 
   .scroll-down{
-    display: none;
+    display: flex;
+    position: initial;
+  }
+
+  .scroll-down i{
+    padding: 6px;
+    font-size: 7px;
   }
 }
 
@@ -248,13 +299,27 @@ transform: translateY(-8px);
     display: block;
   }
 
+  #footer-icon{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+  }
+  
+  .footer-navlist{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
   .navlist{
     position: absolute;
-    top: 100%;
+    top: 10%;
     right: -100%;
-    width: 300px;
+    width: 32%;
     height: 40vh;
-    background: orange;
+    border-radius: 5px;
+    background: #e6e6e6;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -263,6 +328,7 @@ transform: translateY(-8px);
   }
 
   .navlist a{
+    top: 12%;
     margin-left: 0;
     display: block;
     margin: 7px 0;
@@ -271,11 +337,42 @@ transform: translateY(-8px);
   .navlist.open{
     right: 0;
   }
-}
 
-@media (max-width: 680px){
+  .klutzyboy-img{
+    display: inline-flex
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 30%;
+  }
+  
   .klutzyboy-img img{
-    width: 100%;
+    width: 200px;
     height: auto;
   }
 }
+
+@media (max-width: 680px){
+
+  .icons{
+    display: flex;
+    position:absolute;
+    top: 15%;
+    
+  }
+   .klutzyboy-img{
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .klutzyboy-img img{
+    width: 180px;
+    height: auto;    
+  }
+  footer{
+    display: flex;
+    position: unset;
+  }
+
+}
+
