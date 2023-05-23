@@ -261,12 +261,6 @@ footer > ul{
     padding-top: 115px;
   }
 
-  .klutzyboy-img{
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .klutzyboy-img img{
     width: 200px;
     height: auto;
