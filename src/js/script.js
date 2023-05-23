@@ -14,6 +14,7 @@ const sr = ScrollReveal ({
 });
 //apply scroll for .klutzyboy-text
 sr.reveal('.klutzyboy-text',{delay:200, origin:'top'});
+sr.reveal('.klutzyboy-img',{delay:0,origin:'top'});
 
 //footer js hidden show 
 let menuFooter = document.querySelector('#footer-icon');
@@ -27,7 +28,6 @@ menuFooter.onclick = () =>{
 
 //.klutzyboy-img js code to scroll origin right
 
-//sr2.reveal('.klutzyboy-img',{delay:700,origin:'top'});
 
 let languageSelector = document.querySelector('#language-selector');
 
