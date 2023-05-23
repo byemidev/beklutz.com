@@ -14,6 +14,7 @@ const sr = ScrollReveal ({
 });
 //apply scroll for .klutzyboy-text
 sr.reveal('.klutzyboy-text',{delay:200, origin:'top'});
+sr.reveal('.klutzyboy-img',{delay:0,origin:'top'});
 
 //footer js hidden show 
 let menuFooter = document.querySelector('#footer-icon');
@@ -23,11 +24,7 @@ let fnav = document.querySelector('.footer-navlist');
 menuFooter.onclick = () =>{
   footer.classList.toggle('open');
   sr.reveal(fnav,{delay:0, origin:'left'});
-}//hay que arregla la version movil , no se ve el scroll
-
-//.klutzyboy-img js code to scroll origin right
-
-//sr2.reveal('.klutzyboy-img',{delay:700,origin:'top'});
+}
 
 let languageSelector = document.querySelector('#language-selector');
 

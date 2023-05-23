@@ -182,6 +182,7 @@ footer{
   width: 100%;
   padding: 33px 9%;
   background: linear-gradient(to right, #f2994a, #f2c94c);
+  justify-content: space-around;
 }
 
 footer.open{
@@ -192,7 +193,6 @@ footer > ul{
   flex-direction: row;
   align-items: center;
   align-content: center;
-
 }
 
 .footer-navlist{
@@ -331,10 +331,16 @@ footer > ul{
     right: 0;
   }
 
+  .klutzyboy-img{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30%;;
+  }
   .klutzyboy-img img{
     width: 200px;
     height: auto;
-    margin-left: 60px;
   }
 }
 
@@ -350,14 +356,16 @@ footer > ul{
     align-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
-
+  
   .klutzyboy-img img{
     width: 180px;
   }
   footer{
     display: flex;
-    position: initial;
+    position: unset;
   }
 }
 
