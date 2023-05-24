@@ -1,3 +1,5 @@
+
+
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -26,21 +28,3 @@ menuFooter.onclick = () =>{
   sr.reveal(fnav,{delay:0, origin:'left'});
 }
 
-/**
- * traducir textos mediante 
- * esta funcion ?
- * o pedir al navegador?
- */
-let languageSelector = document.querySelector('#language-selector');
-
-
-languageSelector.addEventListener("change",function(){
-  var selectedLanguage = languageSelector.value;
-  if(selectedLanguage=='es'){
-    //usar AJAX para cargar el contenido en espanol 
-  }else if(selectedLanguage=='fr'){
-    //usar AJAX para cargar el contenido en Frances
-  }else if(selectedLanguage=='en'){
-    //cargar contenido por defecto en ingles
-  }
-});
