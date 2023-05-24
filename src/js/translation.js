@@ -4,36 +4,23 @@
  * o pedir al navegador?
 */
 const languageSelector = document.querySelector('#language-selector');
-const textToChange = document.querySelectorAll('[data-section]');
-const txt = null;
-languageSelector.addEventListener("change",(e) => {
-  let i = e.target.value ;
-  
+let languageSelected = 'none';
+languageSelected = languageSelector.addEventListener('change', (e) =>{
+  console.log(languageSelected=(e.target.value));
+  let uri = `../src/languages/${languageSelected}.json`;
 
-  
-  if(i == 'es'){
-    console.log('hola');
-  }else if(i == 'fr'){
-    console.log('bagueteeee');
-  }else if(i == 'en'){
-    console.log('englishshssh');
-  }else if (i == 'none'){
-      console.log('naaaaaaaah');
-  }
+  console.log(uri);
+
+  fetch(uri)
+     .then(res => res.json())
+     .then(data => {
+       document.querySelector('.contentToChange').textContent = data.content.p;
+     })
+       .catch(err => {  
+       console.log('catch**************' + err);
+       });
 });
 
 
 
-
-
-/**
- * @param {*} language 
-const txtToChange = document.querySelectorAll("[data-section]");
- * 
-const changeLanguage = async (language) => {
-  const requestJson = await fetch(`../languages/${language}.json`);
-  const txt = await requestJson.json();
-  console.log(txt);
-};
-
-*/
+  
