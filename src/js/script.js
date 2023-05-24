@@ -26,6 +26,11 @@ menuFooter.onclick = () =>{
   sr.reveal(fnav,{delay:0, origin:'left'});
 }
 
+/**
+ * traducir textos mediante 
+ * esta funcion ?
+ * o pedir al navegador?
+ */
 let languageSelector = document.querySelector('#language-selector');
 
 
