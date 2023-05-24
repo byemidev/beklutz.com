@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
     <!--boxicon link-->
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
     <!--remixicon link-->
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"
     />
     <!--custom google fonts link-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
     />
   </head>
   <body>
@@ -32,15 +32,16 @@
       <ul class="navlist">
         <li><a href="#">Hello!</a></li>
         <li><a href="#">About Us</a></li>
-        <li><i class="ri-earth-fill"></i>
-        <select name="Language" id="language-selector">
-          <option value="es" id="es">Spanish</option>
-          <option value="fr" id="fr">French</option>
-          <option value="en" id="en">English</option>
-        </select>
+        <li for="language-selector"><i class="ri-earth-fill"></i>
+          <select name="Language" id="language-selector">
+            <option value="none" style="text-align: center;">--</option>
+            <option value="es" data-language="es">Spanish</option>
+            <option value="fr" data-language="fr">French</option>
+            <option value="en" data-language="en">English</option>
+          </select>
         </li>
       </ul>
-
+      
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
     <section class="klutzyboy">
@@ -48,31 +49,30 @@
         <h5>#1 custom service</h5>
         <h4>SAY HELLO TO</h4>
         <h1 translate="no" >custom klutz</h1>
-        <p><span>
+        <p data-section="content" data-value="p">
           With the 'recent' birth of WEB 3.0. At KLUTZ we want to introduce a new trend in the market. How many times have we had to re-design a product because the final result did not convince us? We wanted to address this problem in emerging or established businesses with ambiguous design systems. At KLUTZ we wish to implement an AI-based design and assembly platform with state-of-the-art technology and at the same time provide a bespoke in-house production and manufacturing service.
-        </span>
         </p>
         <a href="#">more</a>
         <a href="#" class="ctaa"
-          ><i class="ri-play-fill"></i>watch promo</a>
+        ><i class="ri-play-fill"></i>watch promo</a>
       </div>
       <div class="klutzyboy-img">
         <img src="../src/img/klutzyboy.png" alt="klutzyboy" />
       </div>
     </section>
-
+    
     <div class="icons">
       <a href="#"><i class="ri-instagram-line"></i></a>
       <a href="#"><i class="ri-twitter-line"></i></a>
       <a href="#"><i class="ri-whatsapp-line"></i></a>
     </div>
-
+    
     <div class="scroll-down" id="footer-icon">
       <a href="#">
         <i class="ri-flashlight-line"></i>
       </a>
     </div>
-
+    
     <footer>
       <ul class="footer-navlist">
         <li><a href="#">Powered by NASSIO.IO</a></li>
@@ -83,8 +83,8 @@
     <!--scroll reveal effect-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--custom JS link-->
-    <script src="./src/js/script.js"></script>
+    <script language="JavaScript" src="./src/js/translation.js"></script>
+    <script language="JavaScript" src="./src/js/script.js"></script>
     <!--js to language selection and translation-->
-    <script src="./src/js/translation.js"></script>
   </body>
 </html>

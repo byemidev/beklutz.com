@@ -3,18 +3,37 @@
  * esta funcion usando deepl-node api ?
  * o pedir al navegador?
 */
-let languageSelector = document.querySelector('#language-selector');
-languageSelector.addEventListener("change",function(){
+const languageSelector = document.querySelector('#language-selector');
+const textToChange = document.querySelectorAll('[data-section]');
+const txt = null;
+languageSelector.addEventListener("change",(e) => {
+  let i = e.target.value ;
+  
 
-  var selectedLanguage = languageSelector.value;
-  let p = document.querySelector('#node-translate-p > span');
-  let fr = document.querySelector('#fr');
-  if(selectedLanguage=='es'){
-    let es = document.querySelector('#es');
-    //code 
-  }else if(selectedLanguage=='fr'){
-   
-  }else if(selectedLanguage=='en'){
-    //code
+  
+  if(i == 'es'){
+    console.log('hola');
+  }else if(i == 'fr'){
+    console.log('bagueteeee');
+  }else if(i == 'en'){
+    console.log('englishshssh');
+  }else if (i == 'none'){
+      console.log('naaaaaaaah');
   }
 });
+
+
+
+
+
+/**
+ * @param {*} language 
+const txtToChange = document.querySelectorAll("[data-section]");
+ * 
+const changeLanguage = async (language) => {
+  const requestJson = await fetch(`../languages/${language}.json`);
+  const txt = await requestJson.json();
+  console.log(txt);
+};
+
+*/
