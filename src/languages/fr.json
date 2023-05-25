@@ -1,5 +1,16 @@
 {
   "content":{
     "p":"Avec la naissance 'récente' du WEB 3.0. Chez KLUTZ, nous voulons introduire une nouvelle tendance sur le marché. Combien de fois avons-nous dû revoir la conception d'un produit parce que le résultat final ne nous avait pas convaincus ? Nous avons voulu nous attaquer à ce problème dans les entreprises émergentes ou établies qui ont des systèmes de conception ambigus. Chez KLUTZ, nous souhaitons mettre en œuvre une plateforme de conception et d'assemblage basée sur l'IA et dotée d'une technologie de pointe, tout en proposant un service de production et de fabrication interne sur mesure."
+  },
+
+  "titles":{
+    "h5":"#1er service sur mesure",
+    "h4":"DIRE BONJOUR À"
+  },
+
+  "navbar":{
+    "hello":"Bonjour!",
+    "aboutUS":"Nous"
   }
+
 }
