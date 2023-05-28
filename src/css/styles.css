@@ -261,6 +261,14 @@ footer > ul{
     padding-top: 115px;
   }
 
+  .klutzyboy-img{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30%;;
+  }
+
   .klutzyboy-img img{
     width: 200px;
     height: auto;
@@ -273,7 +281,12 @@ footer > ul{
   }
 
   .icons{
-    display: none;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    top:6%;
   }
 
   .scroll-down{
@@ -329,13 +342,6 @@ footer > ul{
     right: 0;
   }
 
-  .klutzyboy-img{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 30%;;
-  }
   .klutzyboy-img img{
     width: 200px;
     height: auto;
@@ -347,6 +353,7 @@ footer > ul{
   .icons{
     display: flex;
     position:absolute;
+    flex-direction: row;
     top: 12%;
     
   }
