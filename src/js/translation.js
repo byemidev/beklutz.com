@@ -8,7 +8,7 @@ let languageSelected = 'none';
 
 languageSelected = languageSelector.addEventListener('change', (e) =>{
   console.log(languageSelected=(e.target.value));
-  let uri = `../src/languages/${languageSelected}.json`;
+  const uri = `../src/languages/${languageSelected}.json`;
 
   if(languageSelected =='none' || languageSelected == 'en'){
     document.location.reload();  
@@ -27,7 +27,7 @@ languageSelected = languageSelector.addEventListener('change', (e) =>{
        console.log('catch**************' + err);
        });
 
-  });
+  },[]);
 
 
 
