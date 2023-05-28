@@ -1,3 +1,4 @@
+                                   /*-----------------------------css--styles--ByGoetheDev---------------------------------*/
 *{
 padding: 0;
 margin: 0;
@@ -213,6 +214,9 @@ footer > ul{
  color: black;
 }
 
+                                   /*-----------------------------css--styles-responsive-to-smartdevices----------------------------*/
+
+
 @media (max-width: 1535px){
   header{
      padding: 15px 3%;
@@ -371,6 +375,12 @@ footer > ul{
   footer{
     display: flex;
     position: unset;
+  }
+  .footer-navlist li>a{
+    font-size: 10px;
+  }
+  #by {
+    font-size: 1rem;
   }
 }
 
